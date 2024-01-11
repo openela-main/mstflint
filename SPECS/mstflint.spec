@@ -2,8 +2,8 @@
 
 Name:		mstflint
 Summary:	Mellanox firmware burning tool
-Version:	4.23.0
-Release:	2%{?dist}
+Version:	4.24.0
+Release:	1%{?dist}
 License:	GPLv2+ or BSD
 Url:		https://github.com/Mellanox/%{name}
 Source0: 	https://github.com/Mellanox/%{name}/releases/download/v%{version}-1/%{name}-%{version}-1.tar.gz
@@ -63,6 +63,10 @@ chmod +x %{buildroot}/%{_libdir}/mstflint/python_tools/*.so
 %{_mandir}/man1/*
 
 %changelog
+* Fri Jun 02 2023 Kamal Heib <kheib@redhat.com> - 4.24.0-1
+- Update to upstream release 4.24.0
+- Resolves: rhbz#2170368
+
 * Fri Feb 03 2023 Michal Schmidt <mschmidt@redhat.com> - 4.23.0-2
 - Fix debuginfo generation.
 
